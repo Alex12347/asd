@@ -145,5 +145,5 @@ bot.on('message', (message) =>{
        message.channel.sendMessage('PRAISE ELI!!!!!');
     }
 });
-bot.login('NDAxMTIzNjk0ODg3NTY3Mzcy.DTmrIQ.M9nccuQkuEgoOkRxcPa80bS1Hdo');
+
 process.env.BOT_TOKEN
