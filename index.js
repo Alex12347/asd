@@ -1,8 +1,10 @@
 
-const Discord= require('discord.js');
-const bot = new Discord.Client();
-const prefix = "//"
+const commando= require('discord.js-commando');
+const bot = new commando.Client();
 
+bot.registry.registerGroup('eli' ,'eli');
+bot.registry.registerDefaults();
+bot.registry.registerCommandsIn(__dirname + "/commands");
 bot.on('message', (message) =>{
 
     if (message.content =="our"){
