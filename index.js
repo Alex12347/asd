@@ -5,6 +5,7 @@ const bot = new commando.Client();
 bot.registry.registerGroup('eli' ,'eli');
 bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + "/commands");
+bot.login(process.env.BOT_TOKEN);
 bot.on('message', (message) =>{
 
     if (message.content =="our"){
@@ -130,4 +131,4 @@ bot.on('message', (message) =>{
        message.channel.sendMessage('PRAISE ELI!!!!!');
     }
 });
-bot.login(process.env.BOT_TOKEN);
+
