@@ -131,4 +131,4 @@ bot.on('message', (message) =>{
        message.channel.sendMessage('PRAISE ELI!!!!!');
     }
 });
-
+bot.login(Config.user.email, Config.user.password);
